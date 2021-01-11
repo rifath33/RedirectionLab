@@ -1,11 +1,14 @@
 public class PigLatin{
   public static void main(String[] args){
     
-    System.out.println(pigLatin("the"));
-    System.out.println(pigLatin("check"));
-    System.out.println(pigLatin("skee"));
-    System.out.println(pigLatin("emu"));
-    System.out.println(pigLatin("grade"));
+    System.out.println(pigLatinBest("*emu"));
+    System.out.println(pigLatinBest("4chan"));
+    System.out.println(pigLatinBest("fish!"));
+    System.out.println(pigLatinBest("fish"));
+    System.out.println(pigLatinBest("the."));
+    System.out.println(pigLatinBest("cat!"));
+    System.out.println(pigLatinBest("amazing?"));
+    System.out.println(pigLatinBest("apple%"));
     
   }
   
@@ -102,4 +105,57 @@ public class PigLatin{
     
   }
   
+  public static String pigLatinBest(String s){
+    String result = "";
+    char beginning = s.charAt(0);
+    char ending = s.charAt(s.length()-1);
+    
+    if(Character.isLetter(beginning)){
+        
+        if(!Character.isLetter(ending)){
+            
+            result = pigLatin(s.substring(0,s.length()-1)) + ending;
+            return result;
+        
+        }
+        else{
+            
+            result = pigLatin(s);
+            return result;
+            
+        }
+    
+    }
+    else{
+    
+        return s;
+    
+    }
+    
+  }
+  
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
