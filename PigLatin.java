@@ -17,21 +17,22 @@ public class PigLatin{
   }
   
   public static String pigLatinSimple(String s){
+    String workingString = s.toLowerCase();
     String result = "";
     
     if(
     
-    s.charAt(0) == ('a') ||
-    s.charAt(0) == ('e') ||
-    s.charAt(0) == ('i') ||
-    s.charAt(0) == ('o') ||
-    s.charAt(0) == ('u')
+    workingString.charAt(0) == ('a') ||
+    workingString.charAt(0) == ('e') ||
+    workingString.charAt(0) == ('i') ||
+    workingString.charAt(0) == ('o') ||
+    workingString.charAt(0) == ('u')
     
     )
-    result = s + "hay";
+    result = workingString + "hay";
     else{
         
-        result = s.substring(1) + s.charAt(0);
+        result = workingString.substring(1) + workingString.charAt(0);
         result = result + "ay";
         
     }
@@ -41,46 +42,47 @@ public class PigLatin{
   }
   
   public static String pigLatin(String s){
+    String workingString = s.toLowerCase();
     String result = "";
     
     if(
     
-    s.substring(0,2).equals("bl") ||
-    s.substring(0,2).equals("br" ) ||
-    s.substring(0,2).equals("ch" ) ||
-    s.substring(0,2).equals("ck" ) ||
-    s.substring(0,2).equals( "cl" ) ||
-    s.substring(0,2).equals(  "cr") ||
-    s.substring(0,2).equals( "dr") ||
-    s.substring(0,2).equals( "fl" ) ||
-    s.substring(0,2).equals("fr" ) ||
-    s.substring(0,2).equals("gh" ) ||
-    s.substring(0,2).equals("gl" ) ||
-    s.substring(0,2).equals( "gr" ) ||
-    s.substring(0,2).equals("ng" ) ||
-    s.substring(0,2).equals("ph" ) ||
-    s.substring(0,2).equals("pl" ) ||
-    s.substring(0,2).equals("pr" ) ||
-    s.substring(0,2).equals("qu" ) ||
-    s.substring(0,2).equals("sc" ) ||
-    s.substring(0,2).equals("sh" ) ||
-    s.substring(0,2).equals("sk" ) ||
-    s.substring(0,2).equals("sl" ) ||
-    s.substring(0,2).equals( "sm" ) ||
-    s.substring(0,2).equals("sn" ) ||
-    s.substring(0,2).equals( "sp" ) ||
-    s.substring(0,2).equals("st" ) ||
-    s.substring(0,2).equals("sw" ) ||
-    s.substring(0,2).equals("th" ) ||
-    s.substring(0,2).equals("tr" ) ||
-    s.substring(0,2).equals("tw" ) ||
-    s.substring(0,2).equals("wh" ) ||
-    s.substring(0,2).equals( "wr" )
+    workingString.substring(0,2).equals("bl") ||
+    workingString.substring(0,2).equals("br" ) ||
+    workingString.substring(0,2).equals("ch" ) ||
+    workingString.substring(0,2).equals("ck" ) ||
+    workingString.substring(0,2).equals( "cl" ) ||
+    workingString.substring(0,2).equals(  "cr") ||
+    workingString.substring(0,2).equals( "dr") ||
+    workingString.substring(0,2).equals( "fl" ) ||
+    workingString.substring(0,2).equals("fr" ) ||
+    workingString.substring(0,2).equals("gh" ) ||
+    workingString.substring(0,2).equals("gl" ) ||
+    workingString.substring(0,2).equals( "gr" ) ||
+    workingString.substring(0,2).equals("ng" ) ||
+    workingString.substring(0,2).equals("ph" ) ||
+    workingString.substring(0,2).equals("pl" ) ||
+    workingString.substring(0,2).equals("pr" ) ||
+    workingString.substring(0,2).equals("qu" ) ||
+    workingString.substring(0,2).equals("sc" ) ||
+    workingString.substring(0,2).equals("sh" ) ||
+    workingString.substring(0,2).equals("sk" ) ||
+    workingString.substring(0,2).equals("sl" ) ||
+    workingString.substring(0,2).equals( "sm" ) ||
+    workingString.substring(0,2).equals("sn" ) ||
+    workingString.substring(0,2).equals( "sp" ) ||
+    workingString.substring(0,2).equals("st" ) ||
+    workingString.substring(0,2).equals("sw" ) ||
+    workingString.substring(0,2).equals("th" ) ||
+    workingString.substring(0,2).equals("tr" ) ||
+    workingString.substring(0,2).equals("tw" ) ||
+    workingString.substring(0,2).equals("wh" ) ||
+    workingString.substring(0,2).equals( "wr" )
         
     )
     {
         
-        result = s.substring(2) + s.substring(0,2);
+        result = workingString.substring(2) + workingString.substring(0,2);
         result = result + "ay";
         
     }
@@ -88,17 +90,17 @@ public class PigLatin{
     
         if(
     
-        s.charAt(0) == ('a') ||
-        s.charAt(0) == ('e') ||
-        s.charAt(0) == ('i') ||
-        s.charAt(0) == ('o') ||
-        s.charAt(0) == ('u')
+        workingString.charAt(0) == ('a') ||
+        workingString.charAt(0) == ('e') ||
+        workingString.charAt(0) == ('i') ||
+        workingString.charAt(0) == ('o') ||
+        workingString.charAt(0) == ('u')
     
         )
-        result = s + "hay";
+        result = workingString + "hay";
         else{
         
-            result = s.substring(1) + s.charAt(0);
+            result = workingString.substring(1) + workingString.charAt(0);
             result = result + "ay";
         
         }
