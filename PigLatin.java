@@ -46,39 +46,41 @@ public class PigLatin{
     String result = "";
     
     if(
-    
-    workingString.substring(0,2).equals("bl") ||
-    workingString.substring(0,2).equals("br" ) ||
-    workingString.substring(0,2).equals("ch" ) ||
-    workingString.substring(0,2).equals("ck" ) ||
-    workingString.substring(0,2).equals( "cl" ) ||
-    workingString.substring(0,2).equals(  "cr") ||
-    workingString.substring(0,2).equals( "dr") ||
-    workingString.substring(0,2).equals( "fl" ) ||
-    workingString.substring(0,2).equals("fr" ) ||
-    workingString.substring(0,2).equals("gh" ) ||
-    workingString.substring(0,2).equals("gl" ) ||
-    workingString.substring(0,2).equals( "gr" ) ||
-    workingString.substring(0,2).equals("ng" ) ||
-    workingString.substring(0,2).equals("ph" ) ||
-    workingString.substring(0,2).equals("pl" ) ||
-    workingString.substring(0,2).equals("pr" ) ||
-    workingString.substring(0,2).equals("qu" ) ||
-    workingString.substring(0,2).equals("sc" ) ||
-    workingString.substring(0,2).equals("sh" ) ||
-    workingString.substring(0,2).equals("sk" ) ||
-    workingString.substring(0,2).equals("sl" ) ||
-    workingString.substring(0,2).equals( "sm" ) ||
-    workingString.substring(0,2).equals("sn" ) ||
-    workingString.substring(0,2).equals( "sp" ) ||
-    workingString.substring(0,2).equals("st" ) ||
-    workingString.substring(0,2).equals("sw" ) ||
-    workingString.substring(0,2).equals("th" ) ||
-    workingString.substring(0,2).equals("tr" ) ||
-    workingString.substring(0,2).equals("tw" ) ||
-    workingString.substring(0,2).equals("wh" ) ||
-    workingString.substring(0,2).equals( "wr" )
-        
+        (workingString.length() > 1)
+        &&
+        (
+        workingString.substring(0,2).equals("bl") ||
+        workingString.substring(0,2).equals("br" ) ||
+        workingString.substring(0,2).equals("ch" ) ||
+        workingString.substring(0,2).equals("ck" ) ||
+        workingString.substring(0,2).equals( "cl" ) ||
+        workingString.substring(0,2).equals(  "cr") ||
+        workingString.substring(0,2).equals( "dr") ||
+        workingString.substring(0,2).equals( "fl" ) ||
+        workingString.substring(0,2).equals("fr" ) ||
+        workingString.substring(0,2).equals("gh" ) ||
+        workingString.substring(0,2).equals("gl" ) ||
+        workingString.substring(0,2).equals( "gr" ) ||
+        workingString.substring(0,2).equals("ng" ) ||
+        workingString.substring(0,2).equals("ph" ) ||
+        workingString.substring(0,2).equals("pl" ) ||
+        workingString.substring(0,2).equals("pr" ) ||
+        workingString.substring(0,2).equals("qu" ) ||
+        workingString.substring(0,2).equals("sc" ) ||
+        workingString.substring(0,2).equals("sh" ) ||
+        workingString.substring(0,2).equals("sk" ) ||
+        workingString.substring(0,2).equals("sl" ) ||
+        workingString.substring(0,2).equals( "sm" ) ||
+        workingString.substring(0,2).equals("sn" ) ||
+        workingString.substring(0,2).equals( "sp" ) ||
+        workingString.substring(0,2).equals("st" ) ||
+        workingString.substring(0,2).equals("sw" ) ||
+        workingString.substring(0,2).equals("th" ) ||
+        workingString.substring(0,2).equals("tr" ) ||
+        workingString.substring(0,2).equals("tw" ) ||
+        workingString.substring(0,2).equals("wh" ) ||
+        workingString.substring(0,2).equals( "wr" )
+       ) 
     )
     {
         
