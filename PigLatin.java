@@ -1,15 +1,19 @@
+import java.util.Scanner;
+
 public class PigLatin{
-  public static void main(String[] args){
-    
-    System.out.println(pigLatinBest("*emu"));
-    System.out.println(pigLatinBest("4chan"));
-    System.out.println(pigLatinBest("fish!"));
-    System.out.println(pigLatinBest("fish"));
-    System.out.println(pigLatinBest("the."));
-    System.out.println(pigLatinBest("cat!"));
-    System.out.println(pigLatinBest("amazing?"));
-    System.out.println(pigLatinBest("apple%"));
-    
+  public static void main(String args[]) {
+    Scanner s = new Scanner(System.in);
+    while (s.hasNextLine()) {
+      String str = s.nextLine();
+      String newstr = "";
+      String[] words = str.split(" ");
+      for (int i = 0; i < words.length; i++) {
+  
+          newstr += pigLatinBest(words[i]) + " ";
+      }
+      System.out.println(newstr);
+    }
+
   }
   
   public static String pigLatinSimple(String s){
@@ -106,21 +110,22 @@ public class PigLatin{
   }
   
   public static String pigLatinBest(String s){
+    String workingString = s.toLowerCase();
     String result = "";
-    char beginning = s.charAt(0);
-    char ending = s.charAt(s.length()-1);
+    char beginning = workingString.charAt(0);
+    char ending = workingString.charAt(workingString.length()-1);
     
     if(Character.isLetter(beginning)){
         
         if(!Character.isLetter(ending)){
             
-            result = pigLatin(s.substring(0,s.length()-1)) + ending;
+            result = pigLatin(workingString.substring(0,workingString.length()-1)) + ending;
             return result;
         
         }
         else{
             
-            result = pigLatin(s);
+            result = pigLatin(workingString);
             return result;
             
         }
@@ -128,7 +133,7 @@ public class PigLatin{
     }
     else{
     
-        return s;
+        return pigLatin(workingString);
     
     }
     
