@@ -8,9 +8,22 @@ We will combine multiple whitespaces between words into spaces.
 
 import java.util.Scanner;
 public class MakeStars {
+    
   public static void main(String args[]) {
-
+    
+    Scanner scan = new Scanner ( System.in );
+    String result = "";
+    
+    while(scan.hasNext()){
+    if(result.equals(""))
+    result = result + scan.next();
+    else result = result + " " + scan.next();
+    }
+    
+    System.out.println( result);
+    
   }
+
 
 }
 
